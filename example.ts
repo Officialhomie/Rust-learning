@@ -7,7 +7,7 @@ import {
 
 const connection = new Connection(clusterApiUrl("devnet")); // setting up connection
 
-const address = new PublicKey("CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN"); //fetching the address
+const address = new PublicKey("59APKosXzS6n9x8heKFLd4nBWCfZLv8i5eAVu95fWFxq"); //fetching the address
 
 const balance = await connection.getBalance(address); // getting the balance
 

@@ -1,12 +1,12 @@
-
-
-
 import { 
     Connection, 
     LAMPORTS_PER_SOL, 
-    PublicKey 
+    PublicKey, 
+    SystemProgram, 
+    Transaction
 } from "@solana/web3.js";
 import { resolve } from "@bonfida/spl-name-service";
+import { amount } from "@wormhole-foundation/sdk";
 
 // Initialize the connection to Solana Mainnet
 const connection = new Connection("https://api.mainnet-beta.solana.com", "confirmed");
@@ -48,3 +48,5 @@ async function resolveDomainToPublicKey(domain) {
 // Example usage
 await getBalance("toly.sol"); // Example with .sol domain
 await getBalance("59APKosXzS6n9x8heKFLd4nBWCfZLv8i5eAVu95fWFxq"); // Example with public key
+
+
